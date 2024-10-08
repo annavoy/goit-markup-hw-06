@@ -74,8 +74,9 @@ button {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.page-header .container {
+.header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .nav-list,
@@ -169,8 +170,8 @@ button {
   }
   .nav-link:hover,
   .nav-link:focus,
-  .contacts-list:hover,
-  .contacts-list:focus,
+  .contacts-link:hover,
+  .contacts-link:focus,
   .nav-link.current {
     color: #404bbf;
   }
@@ -219,8 +220,10 @@ button {
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   height: 100%;
+}
+.mobile-menu-nav {
+  margin-bottom: 168px;
 }
 .mobile-menu-close {
   position: absolute;
@@ -253,9 +256,6 @@ button {
 .mobile-button:hover > .mobile-button-icon.icon,
 .mobile-button:focus > .mobile-button-icon.icon {
   fill: #ffffff;
-}
-.mobile-menu-nav {
-  margin-bottom: auto;
 }
 
 .mobile-menu-list {
